@@ -38,7 +38,9 @@ if (process.env.NODE_ENV !== "production") {
 // payload- data of user that u want t share
 app.use("/api/songs", songRouter);
 app.use("/api/auth", router);
-
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
 if (process.env.NODE_ENV === "production") {
   const distPath = path.join(__dirname, "frontend", "dist");
 
