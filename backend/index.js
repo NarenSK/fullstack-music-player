@@ -40,13 +40,11 @@ app.use("/api/songs", songRouter);
 app.use("/api/auth", router);
 
 if (process.env.NODE_ENV === "production") {
-  if (process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname, "frontend/dist")));
+  app.use(express.static(path.join(__dirname, "frontend/dist")));
 
-    app.use((req, res) => {
-      res.sendFile(path.join(__dirname, "frontend/dist/index.html"));
-    });
-  }
+  app.use((req, res) => {
+    res.sendFile(path.join(__dirname, "frontend/dist/index.html"));
+  });
 }
 // CORS error
 app.listen(PORT, () => console.log(`Server is running on Port ${PORT}`));
