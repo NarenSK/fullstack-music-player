@@ -110,9 +110,9 @@ Synthesia/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/Synthesia.git
+git clone https://github.com/NarenSK/fullstack-music-player.git
 
-cd Synthesia
+cd fullstack-music-player
 ```
 
 ### Backend Setup
