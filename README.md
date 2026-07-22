@@ -89,19 +89,16 @@ Synthesia is a modern full-stack music streaming web application built using the
 Synthesia/
 │
 ├── frontend/
+|   ├── public/
 │   ├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── redux/
-│   └── assets/
-│
+│   
 ├── backend/
+|   ├── config/
 │   ├── controllers/
-│   ├── models/
-│   ├── routes/
 │   ├── middleware/
-│   ├── config/
-│   └── server.js
+|   ├── models/
+│   ├── routes/
+│   ├── utils/   
 │
 └── README.md
 ```
